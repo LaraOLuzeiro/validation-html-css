@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#home{
+    height: 100vh;
+    background-image: url(assets/cup-coffee-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 8vh;
+}
+
+#logo{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(239 , 163 , 49);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.navitems{
+    display: inline;
+    color: rgb(239 , 163 , 49);
+    font-size: large;
+    text-align: center;
+    margin-right: 50px;
+} 
+
+.navitems:hover{
+    color:rgb(242,189,108);
+}
+
+.btn_juntarse{
+    background-color:rgb(242,189,108);
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    border:0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn_juntarse:hover{
+    background-color: rgb(239 , 163 , 49);
+}
+
+#div_home{
+    text-align: right;
+    margin-right: 100px;
+    padding-bottom: 58px;
+}
+
+#txt1{
+    color: rgb(239 , 163 , 49);
+    font-size: 60px;
+}
+
+#txt2{
+    color:white;
+    font-size: xx-large;
+}
+
+#txt3{
+    color:white;
+    width: 45vw;
+    margin: 0px 50px;
+    font-size: xx-large;
+}
+
+#div_home2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+/* beneficios */
+#beneficios{
+    margin-top: 0px;
+    padding-top: 5vh;
+    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    color: white;
+    height: 100vh;
+}
+
+#div_beneficios_itens{
+    display:flex;
+    justify-content: space-between;
+    margin: 0vw 8vw;
+    color: black;
+}
+
+.beneficios_itens{
+    background-color: rgb(239 , 163 , 49);
+    padding: 1vw 1vw 2vw 1vw;
+    width: 40vw;
+    height: 50vh;
+    margin: 2vw;
+    border-radius: 6px;
+}
+
+.title_beneficios123{
+    margin-bottom: 5vh;
+    font-size: xx-large;
+}
+
+.txt_beneficios123{
+    margin: 5vh 10vh;
+    font-size: x-large;
+}
+
+
+/* por que cafe */
+#pq_cafe{
+    margin-top: 0px;
+    padding-top: 3vh;
+    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    color: white;
+    height: 100vh;
+}
+
+#div_pqcafe_itens{
+    display: flex;
+    justify-content: space-between;
+    margin: 0vw 8vw;
+}
+
+.pqcafe_itens{
+    padding: 1vw 2vw 2vw 1vw;
+    width: 40vw;
+    height: 60vh;
+    margin: 2vw;
+}
+
+.pqcafe_num{
+    border: 0.5vh solid rgb(239 , 163 , 49);
+    border-radius: 8px;
+    width: 3vw;
+    height: 3vw;
+    font-size: xx-large;
+}
+
+.title_pqcafe123{
+    margin-bottom: 5vh;
+    font-size: x-large;
+}
+
+.txt_pqcafe{
+    font-size: large;
+    padding: 2vw 0vw;
+}
+
+/* relatos */
+#relatos{
+    margin-top: 0px;
+    padding-top: 5vh;
+    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    color: white;
+    height: 80vh;
+}
+
+#relatos_txt{
+    font-style: italic;
+}
+
+#relatos_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#relatos_fieldset{
+    width: 30vw;
+}
+
+#fieldset_legend{
+    display: flex;
+}
+
+#fieldset_nome{
+    margin: 20px 20px;
+}
+
+#fieldset_txt{
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+}
+
+#relatos_div2{
+    display: flex;
+    justify-content: center;
+}
+
+.relatos_mugs{
+    margin: 20px;
+}
+
+/* duvida */
+#duvida{
+    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+#duvida_div{
+    color: rgb(239 , 163 , 49);
+    font-size: xx-large;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#wpp_icon{
+    position: absolute;
+    margin: 0 0 5vh 2vw;
+}
+
+
+/* footer */
+#footer{
+    background-image: url(assets/laptop-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#txt_footer_div{
+    display: flex;
+    justify-content: center;
+}
+
+#txt_footer{
+    background-color: rgb(239 , 163 , 49);
+    border-radius: 13px;
+    padding: 8px;
+    text-align: center;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.redes-itens{
+    margin: 150px 100px;
+}
+
+.redes_icons{
+    background-color: rgb(239 , 163 , 49);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+}

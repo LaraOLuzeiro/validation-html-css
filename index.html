@@ -6,119 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/coffee-icon.svg">
 </head>
 <body>
-    <div id="home">
-        <header>
-            <div>
-                <div><img src="assets/coffee-icon.svg" class="navitems" id="logo"></div>
-            </div>
-            <div>
-                <nav>
-                    <center><ul>
-                        <a href="#beneficios"><li class="navitems">Benefícios</li></a>
-                        <a href="#pq_cafe"><li class="navitems">Por que café?</li></a>
-                        <a href="#relatos"><li class="navitems">Relatos de amantes</li></a>
-                    </ul></center>
-                </nav>
-            </div>
-            <div><button type="submit" class="btn_juntarse">Juntar-se</button></div>
-        </header>
-        <div id="div_home">
-            <h1 id="txt1">DORMIR É UM FRACO SUBSTITUTO <br> PARA O CAFÉ ;)</h1>
-            <h2 id="txt2">Afinal, sempre tem trabalho pra entregar no outro dia :D</h2>
-            <div id="div_home2">
-                <div><h2 id="txt3">Mais de 1 bilhão de pessoas consomem esse líquido divino diariamente</h2></div>
-                <div><button class="btn_juntarse">Junte-se a nós</button></div>
+    <div id="div_background">
+        <div id="bg_transparente"></div>
+        <div class="bg" id="bg_home"></div>
+        <div class="bg" id="bg_footer"></div>
+    </div>
+    <div id="content">
+        <div id="home">
+            <header>
+                <div class="navitems" id="logo"><img src="assets/coffee-icon.svg"></div>
+                <div>
+                    <nav>
+                        <center><ul>
+                            <a href="#beneficios"><li class="navitems">Benefícios</li></a>
+                            <a href="#pq_cafe"><li class="navitems">Por que café?</li></a>
+                            <a href="#relatos"><li class="navitems">Relatos de amantes</li></a>
+                        </ul></center>
+                    </nav>
+                </div>
+                <div><button type="submit" class="btn_juntarse">Juntar-se</button></div>
+            </header>
+            <div id="div_home">
+                <h1 id="txt1">DORMIR É UM FRACO SUBSTITUTO <br> PARA O CAFÉ ;)</h1>
+                <h2 id="txt2">Afinal, sempre tem trabalho pra entregar no outro dia :D</h2>
+                <div id="wpp_icon"> <a href=""><img src="assets/whatsapp-icon.png" alt="whatsapp"></a></div>
+                <div id="div_home2">
+                    <div><h2 id="txt3">Mais de 1 bilhão de pessoas consomem esse líquido divino diariamente</h2></div>
+                    <div><button class="btn_juntarse">Junte-se a nós</button></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="beneficios">
-        <center><h1>Benefícios</h1>
-        <h2>Se bem que tomar café já é um benefício em si...</h2></center>
-        <div id="div_beneficios_itens">
-            <div class="beneficios_itens" id="beneficio1">
-                <center><h2 class="title_beneficios123">Queima Calorias!</h2>
-                <img src="assets/fire.svg">
-                <p class="txt_beneficios123">Acelera o metabolismo e ajuda a emagrecer.</p></center>
-            </div>
-            <div class="beneficios_itens" id="beneficio2">
-                <center><h2 class="title_beneficios123">Aumenta a Vida!</h2>
-                <img src="assets/smile.svg">
-                <p class="txt_beneficios123">Risco menor de morte por doenças.</p></center>
-            </div>
-            <div class="beneficios_itens" id="beneficio3">
-                <center><h2 class="title_beneficios123">Memória Forte!</h2>
-                <img src="assets/brain.svg">
-                <p class="txt_beneficios123">Cafeína tem efeito positivo na memória.</p></center>
+        <div id="beneficios">
+            <center><h1>Benefícios</h1>
+            <h2>Se bem que tomar café já é um benefício em si...</h2></center>
+            <div id="div_beneficios_itens">
+                <div class="beneficios_itens" id="beneficio1">
+                    <center><h2 class="title_beneficios123">Queima Calorias!</h2>
+                    <img src="assets/fire.svg">
+                    <p class="txt_beneficios123">Acelera o metabolismo e ajuda a emagrecer.</p></center>
+                </div>
+                <div class="beneficios_itens" id="beneficio2">
+                    <center><h2 class="title_beneficios123">Aumenta a Vida!</h2>
+                    <img src="assets/smile.svg">
+                    <p class="txt_beneficios123">Risco menor de morte por doenças.</p></center>
+                </div>
+                <div class="beneficios_itens" id="beneficio3">
+                    <center><h2 class="title_beneficios123">Memória Forte!</h2>
+                    <img src="assets/brain.svg">
+                    <p class="txt_beneficios123">Cafeína tem efeito positivo na memória.</p></center>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="pq_cafe">
-        <center><h1>Por que café?</h1>
-        <h2>Tirando os motivos óbvios: o sabor, o aroma, a textura...</h2></center>
-        <div id="div_pqcafe_itens">
-            <div class="pqcafe_itens" id="pqcafe1">
-                <center><div class="pqcafe_num">1</div>
-                    <h2 class="title_pqcafe123">Cafeína é legal</h2>
+        <div id="pq_cafe">
+            <div id="bg_txtcafe"><p>C A F É</p></div>
+            <center><h1>Por que café?</h1>
+            <h2>Tirando os motivos óbvios: o sabor, o aroma, a textura...</h2></center>
+            <div id="div_pqcafe_itens">
+                <div class="pqcafe_itens" id="pqcafe1">
+                    <center><div class="pqcafe_num">1</div>
+                        <h2 class="title_pqcafe123">Cafeína é legal</h2>
+                        <ul class="txt_pqcafe">
+                        <li>Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em que a cafeína contribui significativamente.</li>
+                    </ul>
+                    </center>
+                </div>
+                <div class="pqcafe_itens" id="pqcafe2">
+                    <center><div class="pqcafe_num">2</div>
+                    <h2 class="title_pqcafe123">Cultura</h2>
                     <ul class="txt_pqcafe">
-                    <li>Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em que a cafeína contribui significativamente.</li>
-                </ul>
-                </center>
+                        <li>Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita.</li><br>
+                        <li>Até Java (linguagem) foi nomeada graças à um café!</li>
+                    </ul></center>
+                </div>
+                <div class="pqcafe_itens" id="pqcafe3">
+                    <center><div class="pqcafe_num">3</div>
+                    <h2 class="title_pqcafe123">"Uma representação da realidade..."</h2>
+                    <img src="assets/tirinha.png" alt="tirinha"></center>
+                </div>
             </div>
-            <div class="pqcafe_itens" id="pqcafe2">
-                <center><div class="pqcafe_num">2</div>
-                <h2 class="title_pqcafe123">Cultura</h2>
-                <ul class="txt_pqcafe">
-                    <li>Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita.</li><br>
-                    <li>Até Java (linguagem) foi nomeada graças à um café!</li>
-                </ul></center>
+        </div> 
+        <div id="relatos">
+            <center><h1>Relatos dos amantes</h1>
+            <h2 id="relatos_subtitulo">"Eu acredito na supremacia do café!"</h2></center>
+            <div id="relatos_slides">
+                <div class="slides" id="relato1">
+                <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
+                </div>
+                <div class="slides" id="relato2">
+                    <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
+                </div>
+                <div class="slides"id="relato3">
+                    <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
+                </div>
+                <div class="arrows">
+                    <a id="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                    <a id="proximo" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
-            <div class="pqcafe_itens" id="pqcafe3">
-                <center><div class="pqcafe_num">3</div>
-                <h2 class="title_pqcafe123">"Uma representação da realidade..."</h2>
-                <img src="assets/tirinha.png" alt="tirinha"></center>
+            <div id="relatos_div2">
+                <div> <img src="assets/mug.svg" alt="mug1" class="relatos_mugs" onclick="currentSlide(1)"> </div>
+                <div> <img src="assets/mug.svg" alt="mug2" class="relatos_mugs" onclick="currentSlide(2)"> </div>
+                <div> <img src="assets/mug.svg" alt="mug3" class="relatos_mugs" onclick="currentSlide(3)"> </div>
             </div>
         </div>
+        <div id="duvida">
+            <div id="duvida_div">
+                <p>Ainda em dúvidas?</p>
+                <button class="btn_juntarse">Junte-se a nós</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <div id="redes">
+                <div  class="redes-itens">
+                    <a href="" class="redes_icons"><img src="assets/instagram.svg" alt="instagram"></a>
+                </div>
+                <div  class="redes-itens">
+                    <a href="" class="redes_icons"><img src="assets/facebook.svg" alt="facebook"></a>
+                </div>
+                <div  class="redes-itens">
+                    <a href="" class="redes_icons"><img src="assets/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+            <div id="txt_footer_div"><p id="txt_footer">Desenvolvido por Beets Jr.</p></div>
+        </footer>
     </div>
-    <div id="relatos">
-        <center><h1>Relatos dos amantes</h1>
-        <h2 id="relatos_txt">"Eu acredito na supremacia do café!"</h2></center>
-        <div id="relatos_div">
-            <fieldset id="relatos_fieldset">
-            <legend id="fieldset_legend"> 
-                <img src="assets/fire.svg" alt="">
-                <p id="fieldset_nome">Arthur Nitto</p>
-            </legend>
-            <p id="fieldset_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
-            </fieldset>
-        </div>
-        <div id="relatos_div2">
-            <div> <img src="assets/mug.svg" alt="mug1" class="relatos_mugs" id="mug1"> </div>
-            <div> <img src="assets/mug.svg" alt="mug2" class="relatos_mugs" id="mug2"> </div>
-            <div> <img src="assets/mug.svg" alt="mug3" class="relatos_mugs" id="mug3"> </div>
-        </div>
-    </div>
-    <div id="duvida">
-        <div> <a href=""><img src="assets/whatsapp-icon.png" alt="whatsapp" id="wpp_icon"></a></div>
-        <div id="duvida_div">
-            <p>Ainda em dúvidas?</p>
-            <button class="btn_juntarse">Junte-se a nós</button>
-        </div>
-    </div>
-    <footer id="footer">
-        <div id="redes">
-            <div  class="redes-itens">
-                <a href="" class="redes_icons"><img src="assets/instagram.svg" alt="instagram"></a>
-            </div>
-            <div  class="redes-itens">
-                <a href="" class="redes_icons"><img src="assets/facebook.svg" alt="facebook"></a>
-            </div>
-            <div  class="redes-itens">
-                <a href="" class="redes_icons"><img src="assets/twitter.svg" alt="twitter"></a>
-            </div>
-        </div>
-        <div id="txt_footer_div"><p id="txt_footer">Desenvolvido por Beets Jr.</p></div>
-    </footer>
 </body>
 </html>

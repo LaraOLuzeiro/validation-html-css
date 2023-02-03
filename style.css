@@ -3,15 +3,54 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
 }
 
 #home{
     height: 100vh;
+    margin-bottom: 0px;
+}
+
+#div_background{
+    z-index: -1;
+    display: flex;
+    width: 100vw;
+}
+
+.bg{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#bg_transparente{
+    position: absolute;
+    width: 100%;
+    height: 513vh;
+    background-color: rgba(30, 30, 30, 0.5);
+    z-index: 1;
+}
+
+#bg_home{
     background-image: url(assets/cup-coffee-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 0px;
+}
+
+#bg_footer{
+    background-image: url(assets/laptop-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 443vh;
+    height: 70vh;
+}
+
+#content{
+    z-index: 2;
+    width: 100%;
 }
 
 header{
@@ -20,10 +59,11 @@ header{
     align-items: center;
     padding: 30px;
     margin-bottom: 8vh;
+    z-index: 2;
 }
 
 #logo{
-    position: absolute;
+    display: flex;
     z-index: 2;
     background-color: rgb(239 , 163 , 49);
     border-radius: 50%;
@@ -60,6 +100,7 @@ header{
     text-align: right;
     margin-right: 100px;
     padding-bottom: 58px;
+    z-index: 2;
 }
 
 #txt1{
@@ -87,11 +128,16 @@ header{
     margin-bottom: 50px;
 }
 
+#wpp_icon{
+    position: fixed;
+    margin: 25vh 0 50vh 2vw;
+}
+
 /* beneficios */
 #beneficios{
     margin-top: 0px;
     padding-top: 5vh;
-    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    background: linear-gradient(109.94deg, #1B1717 2.55%, #1D1D1D 14.05%, #453535 81.5%);
     color: white;
     height: 100vh;
 }
@@ -127,9 +173,26 @@ header{
 #pq_cafe{
     margin-top: 0px;
     padding-top: 3vh;
-    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    background: linear-gradient(109.94deg, #1B1717 2.55%, #1D1D1D 14.05%, #453535 81.5%);
     color: white;
     height: 100vh;
+}
+
+#bg_txtcafe{
+    position: absolute;
+    left: 49px;
+    top: 1421px;
+    font-family: 'Montaga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 185px;
+    text-align: center;
+    color: rgba(255, 254, 254, 0.15);
+    height: 100vh;
+    width: 90vw;
+    margin-top: 20vh;
+    letter-spacing: 4vw;
 }
 
 #div_pqcafe_itens{
@@ -167,38 +230,51 @@ header{
 #relatos{
     margin-top: 0px;
     padding-top: 5vh;
-    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    background: linear-gradient(109.94deg, #1B1717 2.55%, #1D1D1D 14.05%, #453535 81.5%);
     color: white;
     height: 80vh;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-#relatos_txt{
+#relatos_subtitulo{
     font-style: italic;
 }
 
-#relatos_div{
+#relatos_slides{
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
 
-#relatos_fieldset{
-    width: 30vw;
-}
-
-#fieldset_legend{
-    display: flex;
-}
-
-#fieldset_nome{
-    margin: 20px 20px;
-}
-
-#fieldset_txt{
+.relatos_txt{
     text-align: center;
     font-size: larger;
     padding: 20px;
 }
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+}
+
+#anterior, #proximo {
+    cursor: pointer;
+    padding: 0 350px 0 350px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    margin-top: 100px;    
+}
+
+#anterior:hover, #proximo:hover {
+    color: rgb(239 , 163 , 49);
+}
+  
 
 #relatos_div2{
     display: flex;
@@ -206,12 +282,19 @@ header{
 }
 
 .relatos_mugs{
+    cursor: pointer;
     margin: 20px;
+    display: inline-block;
+    transition: white 0.6s ease;
+}
+
+.active{
+    color:rgb(239 , 163 , 49);
 }
 
 /* duvida */
 #duvida{
-    background: linear-gradient(90deg,black, rgb(80, 48, 40));
+    background: linear-gradient(109.94deg, #1B1717 2.55%, #1D1D1D 14.05%, #453535 81.5%);
     height: 50vh;
     display: flex;
     align-items: center;
@@ -224,24 +307,17 @@ header{
     text-align: center;
 }
 
-#wpp_icon{
-    position: absolute;
-    margin: 0 0 5vh 2vw;
-}
-
 
 /* footer */
 #footer{
-    background-image: url(assets/laptop-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 70vh;
+    width: 95vw;
 }
 
 #txt_footer_div{
     display: flex;
     justify-content: center;
+    margin: 5vh 0 0 4vw;
 }
 
 #txt_footer{
@@ -253,12 +329,12 @@ header{
 
 #redes{
     display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
+    justify-content: space-evenly;
 }
 
 .redes-itens{
-    margin: 150px 100px;
+    margin: 150px 0px;
+
 }
 
 .redes_icons{

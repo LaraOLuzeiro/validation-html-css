@@ -43,6 +43,9 @@
             <center><h1>Benefícios</h1>
             <h2>Se bem que tomar café já é um benefício em si...</h2></center>
             <div id="div_beneficios_itens">
+                <div id="vetor1"></div>
+                <div id="vetor2"></div>
+                <div id="relatos_retangulo"></div>
                 <div class="beneficios_itens" id="beneficio1">
                     <center><h2 class="title_beneficios123">Queima Calorias!</h2>
                     <img src="assets/fire.svg">
@@ -91,21 +94,27 @@
         <div id="relatos">
             <center><h1>Relatos dos amantes</h1>
             <h2 id="relatos_subtitulo">"Eu acredito na supremacia do café!"</h2></center>
-            <div id="relatos_slides">
+            <center><div id="relatos_slides">
                 <div class="slides" id="relato1">
-                <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
+                    <img src="assets/arthur.jpeg" alt="" class="relatos_img">
+                    <p class="relatos_nomes">Arthur Nitto</p>
+                    <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
                 </div>
                 <div class="slides" id="relato2">
-                    <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
+                    <img src="assets/marcelo.jpeg" alt="" class="relatos_img">
+                    <p class="relatos_nomes">Marcelo Pirro</p>
+                    <p class="relatos_txt">"Minha relação com o café é tipo: 'eu cheguei em um ponto em que eu preciso do café pra funcionar'. Eu sinto muito essa vibe de que o café é o que 'starta' o me dia e me da energia pra fazer as paradas."</p>
                 </div>
                 <div class="slides"id="relato3">
-                    <p class="relatos_txt">"Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que eu bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado."</p>
+                    <img src="assets/thiago.jpeg" alt="" class="relatos_img">
+                    <p class="relatos_nomes">Thiago Proença</p>
+                    <p class="relatos_txt">"Eu gosto da sensação de tranquilidade ao aproveitar uma boa xícara de café logo pela manhã, depois de uma boa noite de sono, antes de começar a correria do dia-a-dia."</p>
                 </div>
                 <div class="arrows">
                     <a id="anterior" onclick="plusSlides(-1)">&#10094;</a>
                     <a id="proximo" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-            </div>
+            </div></center>
             <div id="relatos_div2">
                 <div> <img src="assets/mug.svg" alt="mug1" class="relatos_mugs" onclick="currentSlide(1)"> </div>
                 <div> <img src="assets/mug.svg" alt="mug2" class="relatos_mugs" onclick="currentSlide(2)"> </div>
@@ -133,5 +142,6 @@
             <div id="txt_footer_div"><p id="txt_footer">Desenvolvido por Beets Jr.</p></div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

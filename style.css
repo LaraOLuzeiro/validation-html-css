@@ -319,21 +319,11 @@ header{
 }
 
 #relatos_div2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
-}
-
-.relatos_mugs{
     cursor: pointer;
-    margin: 20px;
-    display: inline-block;
-    transition: white 0.6s ease;
-}
-
-.active{
-    color:rgb(239 , 163 , 49);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh 45vw 5vh 45vw;
 }
 
 /* duvida */

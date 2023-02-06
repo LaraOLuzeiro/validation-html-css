@@ -21,8 +21,8 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < mugs.length; i++) {
-    mugs[i].className = mugs[i].className.replace(" active", "");
+    mugs[i].style.fill = "white";
   }
   slides[slideIndex-1].style.display = "block";
-  mugs[slideIndex-1].className += " active";
+  mugs[slideIndex-1].style.fill = "rgb(239 , 163 , 49)";
 }
